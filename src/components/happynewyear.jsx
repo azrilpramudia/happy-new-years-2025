@@ -37,7 +37,7 @@ const HappyNewYear = () => {
 
       {/* Responsif Judul */}
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 animate-bounce text-center">
-        Happy New Year 2024!
+        Happy New Year 2025!
       </h1>
 
       {/* Responsif Paragraf */}
