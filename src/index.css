@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Animasi fade-in */
+.bg-space-gradient {
+  background: linear-gradient(180deg, #000020 0%, #000040 50%, #000080 100%);
+  background-size: cover;
+  background-position: center;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -16,24 +21,26 @@
   animation: fadeIn 2s ease-in-out;
 }
 
-/* Background luar angkasa */
-.space-background {
-  background: radial-gradient(circle at 20% 30%, #1a237e, #000000 70%);
-  position: relative;
-  overflow: hidden;
+.moon {
+  background-color: #f1f1f1;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
-/* Bintang-bintang kecil */
-.space-background::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: transparent;
-  background-image: radial-gradient(white 1px, transparent 1px);
-  background-size: 3px 3px;
-  opacity: 0.7;
-  z-index: 0;
+
+@keyframes moonMove {
+  0% {
+    left: -100px; 
+    top: 10%;
+  }
+  50% {
+    top: 20%;
+  }
+  100% {
+    left: calc(100vw - 100px); 
+    top: 10%;
+  }
+}
+
+.moon {
+  animation: moonMove 30s linear infinite;
 }

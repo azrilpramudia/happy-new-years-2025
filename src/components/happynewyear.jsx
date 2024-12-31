@@ -2,8 +2,9 @@ import { useEffect } from "react";
 import confetti from "canvas-confetti";
 
 const HappyNewYear = () => {
+  // Animasi kembang api
   const launchFireworks = () => {
-    const duration = 5 * 1000;
+    const duration = 3 * 1000;
     const end = Date.now() + duration;
 
     (function frame() {
@@ -31,12 +32,15 @@ const HappyNewYear = () => {
   }, []);
 
   return (
-    <div className="text-center z-10">
+    <div className="relative w-full h-screen bg-space-gradient flex flex-col justify-center items-center">
+      {/* Elemen Bulan */}
+      <div className="moon absolute top-10 left-0 w-24 h-24 bg-gray-300 rounded-full shadow-lg"></div>
+
       <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 animate-bounce">
         Happy New Year 2025!
       </h1>
-      <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white animate-fade-in">
-        Jangan lupa tetap ngopi dan ngudud kids 🐱‍🚀
+      <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white opacity-50 animate-fade-in">
+        Jangan Lupa Tetap ngopi & Ngudud ☕🚬
       </p>
       <button
         onClick={launchFireworks}
