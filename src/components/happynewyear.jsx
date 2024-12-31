@@ -42,7 +42,7 @@ const HappyNewYear = () => {
 
       {/* Responsif Paragraf */}
       <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white opacity-80 animate-fade-in text-center">
-        Jangan Lupa Tetap ngopi & Ngudud ☕🚬
+        Jangan Lupa Tetap Ngopi & Ngudud ☕🚬
       </p>
 
       {/* Responsif Tombol */}
