@@ -26,10 +26,9 @@
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
 }
 
-
 @keyframes moonMove {
   0% {
-    left: -100px; 
+    left: -100px;
     top: 10%;
   }
   50% {
